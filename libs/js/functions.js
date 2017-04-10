@@ -83,9 +83,9 @@ function suggetion() {
     $('.submenu-toggle').click(function () {
        $(this).parent().children('ul.submenu').toggle(200);
     });
-    //suggetion for finding product names
+    //Suggestions for finding product names
     suggetion();
-    // Callculate total ammont
+    // Calculate total ammont
     total();
 
     $('.datepicker')

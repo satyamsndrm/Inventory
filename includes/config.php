@@ -1,13 +1,12 @@
 <?php
 /*
 |--------------------------------------------------------------------------
-| OWSA-INV V2
+| US Technologies Inventory Management System V2
 |--------------------------------------------------------------------------
-| Author: Siamon Hasan
-| Project Name: OSWA-INV
+| Author: Saeed Nawaz
+| Project Name: USTech-IMS
 | Version: v2
-| Offcial page: http://oswapp.com/
-| facebook Page: https://www.facebook.com/oswapp
+| Support page: http://ustechlogix.net/
 |
 |
 |
