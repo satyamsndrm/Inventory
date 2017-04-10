@@ -8,6 +8,8 @@ The application was initially created by **Saeed Nawaz**, useing [php](http:php.
 
 USTech-INV is a web based Inventory System, that will allow you to keep tracking of the quantity buying and selling price of the products existing in your warehouse or business. When creating a new products, you can set a quantity,buying and selling price.
 
+![alt tag](https://github.com/zaisahil/inventory/blob/master/screenshot.png)
+
 ****
 
 If you find any bug, and a fix for that bug, please leave a comment on the github page for this project and I will push the change into the master branch.
