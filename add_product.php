@@ -24,15 +24,16 @@ ob_start();
      }
      $date    = make_date();
      $query  = "INSERT INTO products (";
-     $query .=" name,quantity,buy_price,sale_price,categorie_id,media_id,date";
+     $query .="id, name,quantity,buy_price,sale_price,categorie_id,media_id,date";
      $query .=") VALUES (";
-     $query .=" '{$p_name}', '{$p_qty}', '{$p_buy}', '{$p_sale}', '{$p_cat}', '{$media_id}', '{$date}'";
+     $query .="NULL, '{$p_name}', '{$p_qty}', '{$p_buy}', '{$p_sale}', '{$p_cat}', '{$media_id}', '{$date}'";
      $query .=")";
-     $query .=" ON DUPLICATE KEY UPDATE name='{$p_name}'";
+    //  $query .=" ON DUPLICATE KEY UPDATE name='{$p_name}'";
      if($db->query($query)){
        $session->msg('s',"Product added ");
        redirect('add_product.php', false);
      } else {
+       echo $db->error();
        $session->msg('d',' Sorry failed to added!');
        redirect('product.php', false);
      }

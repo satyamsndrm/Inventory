@@ -58,4 +58,10 @@
         <li><a href="daily_sales.php">Daily sales</a> </li>
       </ul>
   </li>
+  <li>
+    <a href="logs.php">
+      <i class="glyphicon glyphicon-home"></i>
+      <span>Daily logs</span>
+    </a>
+  </li>
 </ul>
