@@ -23,12 +23,7 @@ ob_start();
        $media_id = remove_junk($db->escape($_POST['product-photo']));
      }
      $date    = make_date();
-     $query  = "INSERT INTO products (";
-     $query .="id, name,quantity,buy_price,sale_price,categorie_id,media_id,date";
-     $query .=") VALUES (";
-     $query .="NULL, '{$p_name}', '{$p_qty}', '{$p_buy}', '{$p_sale}', '{$p_cat}', '{$media_id}', '{$date}'";
-     $query .=")";
-    //  $query .=" ON DUPLICATE KEY UPDATE name='{$p_name}'";
+     $query = "call insertProduct('$p_name', '{$p_qty}', '{$p_buy}', '{$p_sale}', '{$p_cat}', '{$media_id}', '{$date}')";
      if($db->query($query)){
        $session->msg('s',"Product added ");
        redirect('add_product.php', false);
